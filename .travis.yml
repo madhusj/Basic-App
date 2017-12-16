@@ -10,6 +10,9 @@ addons:
     organization: "kishanlalbj-github"
     token:
       secure: "e08ad9eba1e57172dfc340ee920c951cb6ebb838"
+  sauce_connect:
+    username: "kishanlalbj"
+    access_key: "670e4c84-0b38-48b8-b49b-15c7b088bbdc"
 script:
   - sonar-scanner
   - npm test
