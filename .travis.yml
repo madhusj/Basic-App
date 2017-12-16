@@ -1,0 +1,15 @@
+dist: trusty
+sudo: required
+
+language: node_js
+node_js:
+  - "stable"
+
+addons:
+  sonarcloud:
+    organization: "kishanlalbj-github"
+    token:
+      secure: "e08ad9eba1e57172dfc340ee920c951cb6ebb838"
+script:
+  - sonar-scanner
+  - npm test
