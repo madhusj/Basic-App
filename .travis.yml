@@ -1,10 +1,9 @@
-dist: trusty
-sudo: required
-
 language: node_js
 node_js:
-  - "stable"
-
+  - stable
+cache:
+  directories:
+    - node_modules
 addons:
   sonarcloud:
     organization: "kishanlalbj-github"
@@ -13,7 +12,7 @@ addons:
   sauce_connect:
     username: "kishanlalbj"
     access_key: "670e4c84-0b38-48b8-b49b-15c7b088bbdc"
-    
 script:
   - sonar-scanner
+  - npm run build
   - npm test
