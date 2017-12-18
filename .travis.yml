@@ -20,7 +20,7 @@ deploy:
     provider: gae
     # Skip cleanup so api_key.py and vendored dependencies are still there
     skip_cleanup: true
-    keyfile: secret-key-for-cd.json
+    keyfile: secretkey-for-cd.json
     project: Basic-App
     default: true
     on:
