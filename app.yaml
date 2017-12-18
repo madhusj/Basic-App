@@ -13,4 +13,4 @@ resources:
   disk_size_gb: 10
 network:
   instance_tag: nodejs-1-tcp-80
-  name: nodejs-1-vm
+  name: nodejs-1
