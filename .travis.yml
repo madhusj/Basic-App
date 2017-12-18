@@ -21,7 +21,7 @@ deploy:
     # Skip cleanup so api_key.py and vendored dependencies are still there
     skip_cleanup: true
     keyfile: secretkey-for-cd.json
-    project: Basic-App
+    project: basic-app-189210
     default: true
     on:
         all_branches: true
