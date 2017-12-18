@@ -16,3 +16,12 @@ script:
   - sonar-scanner
   - npm run build
   - npm test
+deploy:
+    provider: gae
+    # Skip cleanup so api_key.py and vendored dependencies are still there
+    skip_cleanup: true
+    keyfile: secret-key-for-cd.json
+    project: Basic-App
+    default: true
+    on:
+        all_branches: true
