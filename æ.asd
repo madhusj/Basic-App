@@ -20,11 +20,15 @@ exit 0
 fi
 
 
+FILES_PATTERN='\.(js|coffee)(\..+)?$'
+FORBIDDEN='æ.asd'
+git diff --cached --name-only | \
+    grep -E $FILES_PATTERN | \
+    GREP_COLOR='4;5;37;41' xargs grep --color --with-filename -n $FORBIDDEN && echo 'COMMIT REJECTED Found "$FORBIDDEN" references. Please remove them before commiting' && exit 1
 
 
 
-
-********************************************************************************************
+********************************************************************************************************
 #!/bin/sh
 #
 # An example hook script to verify what is about to be committed.
