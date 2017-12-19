@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Hi Kishan..welcome to React</h1>
         </header>
         <p className="App-intro">
-          This is by Continous Integration and Continous Delivery
+          This is by Continous Integration and Continous Delivery....
         </p>
       </div>
     );
